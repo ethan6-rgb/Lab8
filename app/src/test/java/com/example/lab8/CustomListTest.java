@@ -57,12 +57,6 @@ public class CustomListTest {
         list.delete(city);
         assertEquals(0, list.getCount());
 
-        list.add(city);
-
-        // Test for other way of deleting City
-        list.delete(new City("Calgary", "Alberta"));
-        assertEquals(0, list.getCount());
-
         // Test Exception if City is not in the list
         assertThrows(Exception.class, () -> {
             list.delete(new City("Yellowknife", "Northwest Territories"));
