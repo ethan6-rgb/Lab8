@@ -49,13 +49,14 @@ public class CustomListTest {
     @Test
     void testDelete() throws Exception {
         list = MockCityList();
+        int listSize = list.getCount();
 
         City city = new City("Calgary", "Alberta");
         list.add(city);
 
         // Test if city is properly deleted
         list.delete(city);
-        assertEquals(0, list.getCount());
+        assertEquals(listSize, list.getCount());
 
         /*
         list.add(city);
