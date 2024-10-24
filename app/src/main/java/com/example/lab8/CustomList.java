@@ -56,12 +56,12 @@ public class CustomList extends ArrayAdapter<City> {
     public boolean hasCity(City city) { return cities.contains(city); };
 
     public void delete(City city) throws Exception {
-        /*if(hasCity(city)) {
+        if(hasCity(city)) {
             cities.remove(city);
         }
         else {
             throw new Exception("City is not in the list!");
-        }*/
+        }
     }
 
 }
