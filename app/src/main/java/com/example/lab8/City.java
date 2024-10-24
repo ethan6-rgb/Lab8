@@ -24,7 +24,7 @@ public class City {
     }
 
     @Override
-    public boolean equals(Obejct o) {
+    public boolean equals(Object o) {
         City city = (City) o;
         if (this.getCityName().equals(city.getCityName()) && this.getProvinceName().equals(city.getProvinceName())) return true;
         else return false;
