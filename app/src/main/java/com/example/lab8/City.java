@@ -1,6 +1,6 @@
 package com.example.lab8;
 
-public class City {
+public class City implements Comparable<City> {
 
     private String city;
     private String province;
