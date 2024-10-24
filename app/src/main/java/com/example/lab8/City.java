@@ -17,4 +17,16 @@ public class City {
     String getProvinceName(){
         return this.province;
     }
+
+    @Override
+    public int compareTo(City city) {
+        return this.city.compareTo(city.getCityName());
+    }
+
+    @Override
+    public boolean equals(Obejct o) {
+        City city = (City) o;
+        if (this.getCityName().equals(city.getCityName()) && this.getProvinceName().equals(city.getProvinceName())) return true;
+        else return false;
+    }
 }
