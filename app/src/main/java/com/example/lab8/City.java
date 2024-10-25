@@ -30,8 +30,4 @@ public class City implements Comparable<City> {
         else return false;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(city, province);
-    }
 }
