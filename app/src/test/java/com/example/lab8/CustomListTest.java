@@ -59,7 +59,7 @@ public class CustomListTest {
         assertEquals(0, list.getCount());
 
 
-        list.add(city);
+        list.addCity(city);
 
         // Test for other way of deleting City
         list.delete(new City("Calgary", "Alberta"));
