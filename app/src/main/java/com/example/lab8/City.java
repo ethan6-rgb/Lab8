@@ -29,4 +29,9 @@ public class City implements Comparable<City> {
         if (this.getCityName().equals(city.getCityName()) && this.getProvinceName().equals(city.getProvinceName())) return true;
         else return false;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(city, province);
+    }
 }
